@@ -1,0 +1,17 @@
+@API_HostAddress = http://localhost:5210
+
+### Criar livro
+POST {{API_HostAddress}}/livro
+Content-Type: application/json
+{
+  "Titulo": "Dom Casmurro",
+  "Autor": "Machado de Assis",
+  "AnoPublicacao": "1899",
+  "TipoCompra": 
+}
+
+### Buscar todos os livros
+GET {{API_HostAddress}}/livros
+Accept: application/json
+
+### 

@@ -1,0 +1,27 @@
+[
+  {
+    "ContainingType": "API.Features.Livros.CreateLivro\u002BEndpoint",
+    "Method": "Handler",
+    "RelativePath": "livros",
+    "HttpMethod": "POST",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "API.Features.Livros.CreateLivro\u002BRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Livros"
+    ]
+  }
+]
