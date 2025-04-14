@@ -23,7 +23,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Update="DatabaseContext\Seed.sql">
+    <None Update="DatabaseContext\Scripts\Seed.sql">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Reports\LivrosAutores.frx">

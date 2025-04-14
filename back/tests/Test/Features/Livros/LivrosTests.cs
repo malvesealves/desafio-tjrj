@@ -17,7 +17,8 @@ public class LivrosTests(CustomWebAppFactory factory) : IClassFixture<CustomWebA
         { 
             Titulo = "Livro Teste", 
             AnoPublicacao = "2025", 
-            Assunto = new Assunto() 
+            Assunto = new Assunto() ,
+            FormaCompra = new FormaCompra()
         };
 
         HttpResponseMessage response = await _client.PostAsJsonAsync("/livros", novoLivro);

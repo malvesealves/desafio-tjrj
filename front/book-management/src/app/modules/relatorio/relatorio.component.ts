@@ -23,8 +23,7 @@ export class RelatorioComponent {
 
   submit() {
         if (this.form.invalid) return;
-    
-   
+       
         this.service.getReport().subscribe(blob => {
           const link = document.createElement('a');
           link.href = URL.createObjectURL(blob);

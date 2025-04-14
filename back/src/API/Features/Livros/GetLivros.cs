@@ -9,7 +9,7 @@ public static class GetLivros
 {
     #region Response
 
-    public record Response(Livro Livro);
+    public record Response(List<Livro> livros);
 
     #endregion
 
@@ -24,9 +24,7 @@ public static class GetLivros
         {
             List<Livro> livros = await context.Livros.ToListAsync();
 
-            List<Response> response = [.. livros.Select(l => new Response(l))];
-
-            return TypedResults.Ok(response);
+            return TypedResults.Ok(new Response(livros));
         }
     }
 }

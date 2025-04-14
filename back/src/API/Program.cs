@@ -3,6 +3,7 @@ using API.Endpoints;
 using API.Exception;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,14 +27,33 @@ builder.Services.AddCors(options =>
     });
 });
 
-
 var app = builder.Build();
+
+using (IServiceScope scope = app.Services.CreateScope())
+{
+    IConfiguration config = scope.ServiceProvider.GetRequiredService<IConfiguration>();
+    var connectionString = config.GetConnectionString("DefaultConnection");
+
+    var scriptDirectory = Path.Combine(AppContext.BaseDirectory, "DatabaseContext/Scripts");
+
+    var sqlFiles = Directory.GetFiles(scriptDirectory, "*.sql").OrderBy(f => f);
+
+    using var connection = new NpgsqlConnection(connectionString);
+    connection.Open();
+
+    foreach (string? file in sqlFiles)
+    {
+        string sql = File.ReadAllText(file);
+        using var command = connection.CreateCommand();
+        command.CommandText = sql;
+        command.ExecuteNonQuery();
+        Console.WriteLine($"Executado: {Path.GetFileName(file)}");
+    }
+}
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
-{
     app.MapOpenApi();
-}
 
 app.UseMiddleware<ExceptionHandling>();
 

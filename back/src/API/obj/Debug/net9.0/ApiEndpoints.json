@@ -200,7 +200,7 @@
   {
     "ContainingType": "API.Features.FormasCompra.GetFormasCompra\u002BEndpoint",
     "Method": "Handler",
-    "RelativePath": "formascompra",
+    "RelativePath": "formas-compra",
     "HttpMethod": "GET",
     "IsController": false,
     "Order": 0,
@@ -313,6 +313,25 @@
     ],
     "Tags": [
       "Livros"
+    ]
+  },
+  {
+    "ContainingType": "API.Features.Relatorios.GetReport\u002BEndpoint",
+    "Method": "Handler",
+    "RelativePath": "relatorios",
+    "HttpMethod": "GET",
+    "IsController": false,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 200
+      }
+    ],
+    "Tags": [
+      "Relatorios"
     ]
   }
 ]

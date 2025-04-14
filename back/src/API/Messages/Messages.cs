@@ -4,5 +4,6 @@
     {
         public const string Assunto_NaoInformadoOuInvalido = "Assunto não foi encontrado ou inválido";
         public const string Autor_NaoInformadoOuInvalido = "Autor(es) não foi(foram) encontrado(s) ou inválido(s)";
+        public const string FormaCompra_NaoInformadoOuInvalido = "Forma Compra não foi encontrado ou inválido";
     }
 }

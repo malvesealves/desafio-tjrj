@@ -10,7 +10,7 @@ public static class CreateLivro
 {
     #region Request e Response
 
-    public record Request(string Titulo, int AssuntoId, int[] AutoresIds, string Editora, int Edicao, string AnoPublicacao, short TipoCompra, decimal Preco);
+    public record Request(string Titulo, int AssuntoId, int[] AutoresIds, string Editora, int Edicao, string AnoPublicacao, int FormaCompra, decimal Preco);
     public record Response(int CodL, string Titulo);
 
     #endregion
@@ -27,7 +27,7 @@ public static class CreateLivro
             RuleFor(r => r.Editora).NotEmpty().MaximumLength(40);
             RuleFor(r => r.Edicao).GreaterThan(0);
             RuleFor(r => r.AnoPublicacao).NotEmpty().MaximumLength(4);
-            RuleFor(r => r.TipoCompra).NotEmpty();
+            RuleFor(r => r.FormaCompra).NotEmpty();
             RuleFor(r => r.Preco).GreaterThan(0);
         }
     }
@@ -58,13 +58,18 @@ public static class CreateLivro
             if (!autores.Any())
                 return TypedResults.BadRequest(Messages.Messages.Autor_NaoInformadoOuInvalido);
 
+            FormaCompra? formaCompra = await context.FormasCompra.FindAsync(request.FormaCompra);
+
+            if (formaCompra is null)
+                return TypedResults.BadRequest(Messages.Messages.FormaCompra_NaoInformadoOuInvalido);
+
             Livro livro = new()
             {
                 Titulo = request.Titulo,
                 Assunto = assunto,
                 Editora = request.Editora,
                 AnoPublicacao = request.AnoPublicacao,
-                TipoCompra = request.TipoCompra,
+                FormaCompra = formaCompra,
                 Preco = request.Preco
             };
 
