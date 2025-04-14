@@ -49,7 +49,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
    }
    ```
 
-3. **Rode as migrações de tabelas e view (na sequência apresten. Em seguida aplique no banco:**
+3. **Rode as migrações de tabelas e view (na sequência apresentada). Em seguida aplique no banco:**
    ```bash
    dotnet ef database update CriaTabelas
    dotnet ef database update CriaView
