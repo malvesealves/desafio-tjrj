@@ -49,9 +49,10 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
    }
    ```
 
-3. **Rode as migrações e aplique no banco:**
+3. **Rode as migrações de tabelas e view (na sequência apresten. Em seguida aplique no banco:**
    ```bash
-   dotnet ef database update
+   dotnet ef database update CriaTabelas
+   dotnet ef database update CriaView
    ```
 
 4. **Execute a API:**
@@ -112,7 +113,7 @@ ng test
 
 ## Seed de Dados
 
-A base já é populada automaticamente com alguns livros no `Seed.sql` bem como a criação da view usada para gerar o relatório em `View.sql`. Isso é executado na inicialização da aplicação.
+A base já é populada automaticamente com alguns registros no `Seed.sql`. Isso é executado na inicialização da aplicação.
 
 ---
 
