@@ -19,7 +19,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
 
 /front/
 ├── book-management/         
-    └── book-catalog-angular/
+    └── src/
 ```
 
 ---
@@ -39,13 +39,13 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
 
 1. **Acesse a pasta do backend:**
    ```bash
-   cd backend/BookCatalog.API
+   cd back/src/API
    ```
 
 2. **Configure a string de conexão no `appsettings.json`:**
    ```json
    "ConnectionStrings": {
-     "DefaultConnection": "Host=localhost;Port=5432;Database=BookCatalogDb;Username=postgres;Password=yourpassword"
+     "DefaultConnection": "Host=localhost;Port=5432;Database=book-management;Username=postgres;Password=tjrj1234"
    }
    ```
 
@@ -59,7 +59,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
    dotnet run
    ```
 
-   A API estará disponível em: [https://localhost:5001](https://localhost:5001)
+   A API estará disponível em: [https://localhost:7012](https://localhost:7012)
 
 ---
 
@@ -67,7 +67,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
 
 1. **Acesse a pasta do frontend:**
    ```bash
-   cd frontend/book-catalog-angular
+   cd front/book-management
    ```
 
 2. **Instale as dependências:**
@@ -79,7 +79,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
    ```ts
    export const environment = {
      production: false,
-     apiUrl: 'https://localhost:5001/api'
+     apiUrl: 'https://localhost:7012/api'
    };
    ```
 
@@ -97,14 +97,14 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
 ### Backend
 
 ```bash
-cd backend/BookCatalog.API.Tests
+cd back/tests/Test
 dotnet test
 ```
 
 ### Frontend
 
 ```bash
-cd frontend/book-catalog-angular
+cd frontend/book-management
 ng test
 ```
 
@@ -112,7 +112,7 @@ ng test
 
 ## Seed de Dados
 
-A base já é populada automaticamente com alguns livros no `DbInitializer.cs`. Isso é executado na inicialização da aplicação.
+A base já é populada automaticamente com alguns livros no `Seed.sql`. Isso é executado na inicialização da aplicação.
 
 ---
 
