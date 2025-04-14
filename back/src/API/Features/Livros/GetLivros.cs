@@ -1,5 +1,6 @@
 ﻿using API.DatabaseContext;
 using API.Endpoints;
+using API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Features.Livros;

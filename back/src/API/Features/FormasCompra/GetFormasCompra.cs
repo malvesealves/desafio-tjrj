@@ -1,5 +1,6 @@
 ﻿using API.DatabaseContext;
 using API.Endpoints;
+using API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Features.FormasCompra
@@ -16,7 +17,7 @@ namespace API.Features.FormasCompra
         {
             public void MapEndpoint(IEndpointRouteBuilder app)
             {
-                app.MapGet("formascompra", Handler).WithTags("FormasCompra");
+                app.MapGet("formas-compra", Handler).WithTags("FormasCompra");
             }
 
             public static async Task<IResult> Handler(AppDbContext context)

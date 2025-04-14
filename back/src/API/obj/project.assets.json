@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net9.0": {
+      "FastReport.Data.Postgres/2025.2.0": {
+        "type": "package",
+        "dependencies": {
+          "Npgsql": "8.0.3"
+        },
+        "compile": {
+          "lib/net6.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0/_._": {}
+        },
+        "build": {
+          "buildTransitive/net6.0/FastReport.Data.Postgres.props": {},
+          "buildTransitive/net6.0/FastReport.Data.Postgres.targets": {}
+        }
+      },
       "FluentValidation/11.11.0": {
         "type": "package",
         "compile": {
@@ -65,7 +81,7 @@
           }
         }
       },
-      "Microsoft.AspNetCore.OpenApi/9.0.2": {
+      "Microsoft.AspNetCore.OpenApi/9.0.4": {
         "type": "package",
         "dependencies": {
           "Microsoft.OpenApi": "1.6.17"
@@ -997,6 +1013,46 @@
     }
   },
   "libraries": {
+    "FastReport.Data.Postgres/2025.2.0": {
+      "sha512": "wEIG5lrIAudq9+aXc6z4cvS2IIEpuQsze46V2JwtHHH36OfHSDKnwT1y9x6KEBNuH4UahJPS1MZpM14KwB070w==",
+      "type": "package",
+      "path": "fastreport.data.postgres/2025.2.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "FastReport MIT license.md",
+        "build/net462/FastReport.Core/FastReport.Data.Postgres.dll",
+        "build/net462/FastReport.Data.Postgres.props",
+        "build/net462/FastReport.Data.Postgres.targets",
+        "build/net462/FastReport.Net/FastReport.Data.Postgres.dll",
+        "build/net462/FastReport.OpenSource/FastReport.Data.Postgres.dll",
+        "build/net462/FastReport.WPF/FastReport.Data.Postgres.dll",
+        "build/net462/ImportConnector.targets",
+        "build/net6.0-windows7.0/FastReport.Data.Postgres.props",
+        "build/net6.0-windows7.0/FastReport.Data.Postgres.targets",
+        "build/net6.0-windows7.0/FastReport.Net/FastReport.Data.Postgres.dll",
+        "build/net6.0-windows7.0/FastReport.WPF/FastReport.Data.Postgres.dll",
+        "build/net6.0-windows7.0/ImportConnector.targets",
+        "build/net6.0/FastReport.Avalonia/FastReport.Data.Postgres.dll",
+        "build/net6.0/FastReport.Core/FastReport.Data.Postgres.dll",
+        "build/net6.0/FastReport.Data.Postgres.props",
+        "build/net6.0/FastReport.Data.Postgres.targets",
+        "build/net6.0/FastReport.OpenSource/FastReport.Data.Postgres.dll",
+        "build/net6.0/ImportConnector.targets",
+        "buildTransitive/net462/FastReport.Data.Postgres.props",
+        "buildTransitive/net462/FastReport.Data.Postgres.targets",
+        "buildTransitive/net6.0-windows7.0/FastReport.Data.Postgres.props",
+        "buildTransitive/net6.0-windows7.0/FastReport.Data.Postgres.targets",
+        "buildTransitive/net6.0/FastReport.Data.Postgres.props",
+        "buildTransitive/net6.0/FastReport.Data.Postgres.targets",
+        "fastreport.data.postgres.2025.2.0.nupkg.sha512",
+        "fastreport.data.postgres.nuspec",
+        "frlogo192.png",
+        "lib/net462/_._",
+        "lib/net6.0-windows7.0/_._",
+        "lib/net6.0/_._"
+      ]
+    },
     "FluentValidation/11.11.0": {
       "sha512": "cyIVdQBwSipxWG8MA3Rqox7iNbUNUTK5bfJi9tIdm4CAfH71Oo5ABLP4/QyrUwuakqpUEPGtE43BDddvEehuYw==",
       "type": "package",
@@ -1076,10 +1132,10 @@
         "logo.png"
       ]
     },
-    "Microsoft.AspNetCore.OpenApi/9.0.2": {
-      "sha512": "JUndpjRNdG8GvzBLH/J4hen4ehWaPcshtiQ6+sUs1Bcj3a7dOsmWpDloDlpPeMOVSlhHwUJ3Xld0ClZjsFLgFQ==",
+    "Microsoft.AspNetCore.OpenApi/9.0.4": {
+      "sha512": "GfZWPbZz1aAtEO3wGCkpeyRc0gzr/+VRHnUgY/YjqVPDlHbeKWCXw3IxKarQdo9myC2O1QBf652Mo50QqbXYRg==",
       "type": "package",
-      "path": "microsoft.aspnetcore.openapi/9.0.2",
+      "path": "microsoft.aspnetcore.openapi/9.0.4",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1088,7 +1144,7 @@
         "THIRD-PARTY-NOTICES.TXT",
         "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll",
         "lib/net9.0/Microsoft.AspNetCore.OpenApi.xml",
-        "microsoft.aspnetcore.openapi.9.0.2.nupkg.sha512",
+        "microsoft.aspnetcore.openapi.9.0.4.nupkg.sha512",
         "microsoft.aspnetcore.openapi.nuspec"
       ]
     },
@@ -2951,10 +3007,11 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
+      "FastReport.Data.Postgres >= 2025.2.0",
       "FluentValidation >= 11.11.0",
       "FluentValidation.AspNetCore >= 11.3.0",
       "FluentValidation.DependencyInjectionExtensions >= 11.11.0",
-      "Microsoft.AspNetCore.OpenApi >= 9.0.2",
+      "Microsoft.AspNetCore.OpenApi >= 9.0.4",
       "Microsoft.EntityFrameworkCore >= 9.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.4",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 9.0.4"
@@ -3010,6 +3067,10 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
+          "FastReport.Data.Postgres": {
+            "target": "Package",
+            "version": "[2025.2.0, )"
+          },
           "FluentValidation": {
             "target": "Package",
             "version": "[11.11.0, )"
@@ -3024,7 +3085,7 @@
           },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
-            "version": "[9.0.2, )"
+            "version": "[9.0.4, )"
           },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",

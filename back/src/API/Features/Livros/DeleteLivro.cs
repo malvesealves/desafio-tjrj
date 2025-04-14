@@ -1,5 +1,6 @@
 ﻿using API.DatabaseContext;
 using API.Endpoints;
+using API.Models;
 
 namespace API.Features.Livros
 {

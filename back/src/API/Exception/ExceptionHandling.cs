@@ -38,7 +38,7 @@ public class ExceptionHandling(RequestDelegate next)
         {
             context.Response.StatusCode = StatusCodes.Status500InternalServerError;
 
-            var problem = new ProblemDetails
+            ProblemDetails problem = new() 
             {
                 Title = "Erro interno no servidor",
                 Status = 500,
