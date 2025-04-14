@@ -112,7 +112,7 @@ ng test
 
 ## Seed de Dados
 
-A base já é populada automaticamente com alguns livros no `Seed.sql`. Isso é executado na inicialização da aplicação.
+A base já é populada automaticamente com alguns livros no `Seed.sql` bem como a criação da view usada para gerar o relatório em `View.sql`. Isso é executado na inicialização da aplicação.
 
 ---
 
