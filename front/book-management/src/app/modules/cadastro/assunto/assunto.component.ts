@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { TableComponent } from '../../../components/table/table.component';
 import { Assunto } from '../../../interfaces/cadastro/assunto.model';
-import { LivroService } from '../../../services/cadastro/livro/livro.service';
 import { AssuntoService } from '../../../services/cadastro/assunto/assunto.service';
 
 @Component({

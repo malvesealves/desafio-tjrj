@@ -7,12 +7,6 @@ namespace API.Features.FormasCompra
 {
     public class GetFormasCompra
     {
-        #region Response
-
-        public record Response(FormaCompra FormaCompra);
-
-        #endregion
-
         public class Endpoint : IEndpoint
         {
             public void MapEndpoint(IEndpointRouteBuilder app)
@@ -24,9 +18,7 @@ namespace API.Features.FormasCompra
             {
                 List<FormaCompra> livros = await context.FormasCompra.ToListAsync();
 
-                List<Response> response = [.. livros.Select(l => new Response(l))];
-
-                return TypedResults.Ok(response);
+                return TypedResults.Ok(livros);
             }
         }
     }

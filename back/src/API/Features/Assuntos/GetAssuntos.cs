@@ -7,12 +7,6 @@ namespace API.Features.Assuntos;
 
 public class GetAssuntos
 {
-    #region Response
-
-    public record Response(Assunto Assunto);
-
-    #endregion
-
     public class Endpoint : IEndpoint
     {
         public void MapEndpoint(IEndpointRouteBuilder app)
@@ -24,9 +18,7 @@ public class GetAssuntos
         {
             List<Assunto> assuntos = await context.Assuntos.ToListAsync();
 
-            List<Response> response = [.. assuntos.Select(l => new Response(l))];
-
-            return TypedResults.Ok(response);
+            return TypedResults.Ok(assuntos.Select(a => { a.CodAs, a.Descricao}));
         }
     }
 }

@@ -1,17 +1,38 @@
 @API_HostAddress = http://localhost:5210
 
-### Criar livro
-POST {{API_HostAddress}}/livro
+### LIVRO
+
+### CreateLivro
+POST {{API_HostAddress}}/livros
 Content-Type: application/json
 {
   "Titulo": "Dom Casmurro",
-  "Autor": "Machado de Assis",
-  "AnoPublicacao": "1899",
-  "TipoCompra": 
+  "AnoPublicacao": "1899", 
+  "Editora": "Moderna",
+  "Edicao": 5,
+  "Preco": 59.90,
+  "AssuntoId": 1
+  "FormaCompraId": 1
 }
 
-### Buscar todos os livros
+### DeleteLivro
+DELETE {{API_HostAddress}}/livros/1
+
+### GetLivros
 GET {{API_HostAddress}}/livros
 Accept: application/json
+
+### UpdateLivro
+PUT {{API_HostAddress}}/livros/2
+Content-Type: application/json
+{
+  "Titulo": "A Hora da Estrela",
+  "AnoPublicacao": "1977", 
+  "Editora": "Rocco",
+  "Edicao": 1,
+  "Preco": 89.90,
+  "AssuntoId": 2
+  "FormaCompraId": 4
+}
 
 ### 

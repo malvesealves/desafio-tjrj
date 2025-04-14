@@ -13,19 +13,21 @@ builder.Services.AddOpenApi();
 
 builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-builder.Services.AddEndpoints();
-
-builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
-
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AngularApp", policy =>
     {
         policy.WithOrigins("http://localhost:4200")
               .AllowAnyHeader()
-              .AllowAnyMethod();
+              .AllowAnyMethod()
+              .AllowCredentials();
     });
 });
+
+
+builder.Services.AddEndpoints();
+
+builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 var app = builder.Build();
 
@@ -55,9 +57,9 @@ using (IServiceScope scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 
-app.UseMiddleware<ExceptionHandling>();
-
 app.UseCors("AngularApp");
+
+app.UseMiddleware<ExceptionHandling>();
 
 app.MapEndpoints();
 
