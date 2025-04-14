@@ -3,19 +3,22 @@
 Este projeto é um sistema CRUD completo para gerenciamento de livros e criação de relatórios, composto por:
 
 - **Backend:** ASP.NET Core 9 com Minimal API, Entity Framework Core e PostgreSQL.
-- **Frontend:** Angular 17 com tela de listagem, criação e edição de livros.
+- **Frontend:** Angular 19 com tela de listagem, criação e edição de livros além de criação de relatórios.
 
 ---
 
 ##  Estrutura do Projeto
 
 ```
-/book-catalog/
+/back/
 │
-├── backend/          # Projeto ASP.NET Core
-│   └── BookCatalog.API/
-│
-├── frontend/         # Projeto Angular
+├── src/ 
+    └── API/
+├── tests/
+    └── Test/
+
+/front/
+├── book-management/         
     └── book-catalog-angular/
 ```
 
@@ -121,12 +124,5 @@ A base já é populada automaticamente com alguns livros no `DbInitializer.cs`. 
 - Exclusão de livro
 - Geração de relatório
 - Testes automatizados (xUnit + Jasmine)
-
-
----
-
-## Autor
-
-- [Mateus Alves](https://github.com/seunome)
 
    
