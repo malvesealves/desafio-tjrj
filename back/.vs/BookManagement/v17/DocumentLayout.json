@@ -3,16 +3,76 @@
   "WorkspaceRootPath": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\relatorios\\getreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\relatorios\\getreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\view.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\view.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\reports\\livrosautores.frx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\reports\\livrosautores.frx||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\models\\relatorioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\models\\relatorioview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\factory\\customwebappfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\factory\\customwebappfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\features\\assuntos\\assuntostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\features\\assuntos\\assuntostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\assuntos\\createassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\createassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\assuntos\\getassuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\getassuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\features\\formascompra\\formascompratests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\features\\formascompra\\formascompratests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\formascompra\\getformascompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\formascompra\\getformascompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\features\\assuntos\\assuntostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\features\\assuntos\\assuntostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\features\\autores\\autorestests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,32 +83,12 @@
       "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\features\\livros\\livrostests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\test\\factory\\customwebappfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BE9A2ECC-E414-4476-895A-B89AE0DABA4F}|tests\\Test\\Test.csproj|solutionrelative:tests\\test\\factory\\customwebappfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\autores\\getautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\autores\\getautores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\livros\\getlivros.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,16 +115,8 @@
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\updateassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\assuntos\\createassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\createassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\assuntos\\deleteassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\deleteassunto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\assuntos\\getassuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\assuntos\\getassuntos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\models\\autor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,10 +139,6 @@
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\messages\\messages.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\models\\formacompra.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\features\\autores\\deleteautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\features\\autores\\deleteautor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -121,6 +149,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
       "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\seed.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|c:\\users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\api\\databasecontext\\view.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{39319726-105F-4BE7-A472-5DB1AAEBACCE}|src\\API\\API.csproj|solutionrelative:src\\api\\databasecontext\\view.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -148,7 +180,7 @@
         },
         {
           "DockedWidth": 231,
-          "SelectedChildIndex": 14,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
@@ -172,41 +204,118 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "AutoresTests.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Autores\\AutoresTests.cs",
-              "RelativeDocumentMoniker": "tests\\Test\\Features\\Autores\\AutoresTests.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Autores\\AutoresTests.cs",
-              "RelativeToolTip": "tests\\Test\\Features\\Autores\\AutoresTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:48:30.614Z",
+              "DocumentIndex": 2,
+              "Title": "View.sql ",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\View.sql",
+              "RelativeDocumentMoniker": "src\\API\\DatabaseContext\\View.sql",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\View.sql",
+              "RelativeToolTip": "src\\API\\DatabaseContext\\View.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-04-14T02:56:09.86Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "src\\API\\appsettings.json",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\appsettings.json",
+              "RelativeToolTip": "src\\API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-14T02:52:13.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LivrosAutores.frx",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Reports\\LivrosAutores.frx",
+              "RelativeDocumentMoniker": "src\\API\\Reports\\LivrosAutores.frx",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Reports\\LivrosAutores.frx",
+              "RelativeToolTip": "src\\API\\Reports\\LivrosAutores.frx",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-04-14T02:46:16.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RelatorioView.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\RelatorioView.cs",
+              "RelativeDocumentMoniker": "src\\API\\Models\\RelatorioView.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\RelatorioView.cs",
+              "RelativeToolTip": "src\\API\\Models\\RelatorioView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:33:04.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "GetReport.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Relatorios\\GetReport.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Relatorios\\GetReport.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Relatorios\\GetReport.cs",
+              "RelativeToolTip": "src\\API\\Features\\Relatorios\\GetReport.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAwwCUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T02:10:48.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "AssuntosTests.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Assuntos\\AssuntosTests.cs",
               "RelativeDocumentMoniker": "tests\\Test\\Features\\Assuntos\\AssuntosTests.cs",
               "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Assuntos\\AssuntosTests.cs",
               "RelativeToolTip": "tests\\Test\\Features\\Assuntos\\AssuntosTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-14T01:46:39.22Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "LivrosTests.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Livros\\LivrosTests.cs",
-              "RelativeDocumentMoniker": "tests\\Test\\Features\\Livros\\LivrosTests.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Livros\\LivrosTests.cs",
-              "RelativeToolTip": "tests\\Test\\Features\\Livros\\LivrosTests.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAABaAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Program.cs",
+              "RelativeDocumentMoniker": "src\\API\\Program.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Program.cs",
+              "RelativeToolTip": "src\\API\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAAXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T01:41:28.391Z",
+              "WhenOpened": "2025-04-13T21:03:08.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CustomWebAppFactory.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Factory\\CustomWebAppFactory.cs",
+              "RelativeDocumentMoniker": "tests\\Test\\Factory\\CustomWebAppFactory.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Factory\\CustomWebAppFactory.cs",
+              "RelativeToolTip": "tests\\Test\\Factory\\CustomWebAppFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T00:40:37.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\API\\DatabaseContext\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\AppDbContext.cs",
+              "RelativeToolTip": "src\\API\\DatabaseContext\\AppDbContext.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAuwFIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T12:37:10.886Z",
               "EditorCaption": ""
             },
             {
@@ -223,150 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetLivros.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\GetLivros.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\GetLivros.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\GetLivros.cs",
-              "RelativeToolTip": "src\\API\\Features\\Livros\\GetLivros.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T21:03:27.122Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "CreateAssunto.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\CreateAssunto.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\CreateAssunto.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\CreateAssunto.cs",
-              "RelativeToolTip": "src\\API\\Features\\Assuntos\\CreateAssunto.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:50:42.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Autor.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Autor.cs",
-              "RelativeDocumentMoniker": "src\\API\\Models\\Autor.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Autor.cs",
-              "RelativeToolTip": "src\\API\\Models\\Autor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T00:19:27.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Program.cs",
-              "RelativeDocumentMoniker": "src\\API\\Program.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Program.cs",
-              "RelativeToolTip": "src\\API\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T21:03:08.912Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetFormasCompra.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
-              "RelativeToolTip": "src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:53:15.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormasCompraTests.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
-              "RelativeDocumentMoniker": "tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
-              "RelativeToolTip": "tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABNAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T00:32:21.073Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Livro.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Livro.cs",
-              "RelativeDocumentMoniker": "src\\API\\Models\\Livro.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Livro.cs",
-              "RelativeToolTip": "src\\API\\Models\\Livro.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:49:14.745Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "LivroAutor.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\LivroAutor.cs",
-              "RelativeDocumentMoniker": "src\\API\\Models\\LivroAutor.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\LivroAutor.cs",
-              "RelativeToolTip": "src\\API\\Models\\LivroAutor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T00:08:21.402Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "CustomWebAppFactory.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Factory\\CustomWebAppFactory.cs",
-              "RelativeDocumentMoniker": "tests\\Test\\Factory\\CustomWebAppFactory.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Factory\\CustomWebAppFactory.cs",
-              "RelativeToolTip": "tests\\Test\\Factory\\CustomWebAppFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-14T00:40:37.597Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAutores.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\GetAutores.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\GetAutores.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\GetAutores.cs",
-              "RelativeToolTip": "src\\API\\Features\\Autores\\GetAutores.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:52:16.648Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "UpdateAutor.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\UpdateAutor.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\UpdateAutor.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\UpdateAutor.cs",
-              "RelativeToolTip": "src\\API\\Features\\Autores\\UpdateAutor.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAA7wDEAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:52:23.011Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\appsettings.Development.json",
               "RelativeDocumentMoniker": "src\\API\\appsettings.Development.json",
@@ -379,124 +345,46 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "API.http",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.http",
-              "RelativeDocumentMoniker": "src\\API\\API.http",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.http",
-              "RelativeToolTip": "src\\API\\API.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2025-04-13T11:17:56.865Z",
+              "DocumentIndex": 12,
+              "Title": "API",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.csproj",
+              "RelativeDocumentMoniker": "src\\API\\API.csproj",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.csproj",
+              "RelativeToolTip": "src\\API\\API.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-04-14T02:14:57.704Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
+              "Title": "CreateAssunto.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\CreateAssunto.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\CreateAssunto.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\CreateAssunto.cs",
+              "RelativeToolTip": "src\\API\\Features\\Assuntos\\CreateAssunto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:50:42.464Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "GetAssuntos.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\GetAssuntos.cs",
               "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\GetAssuntos.cs",
               "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\GetAssuntos.cs",
               "RelativeToolTip": "src\\API\\Features\\Assuntos\\GetAssuntos.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB4AAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-13T11:50:59.837Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\API\\DatabaseContext\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\DatabaseContext\\AppDbContext.cs",
-              "RelativeToolTip": "src\\API\\DatabaseContext\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T12:37:10.886Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "DeleteAssunto.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
-              "RelativeToolTip": "src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:50:51.212Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UpdateAssunto.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
-              "RelativeToolTip": "src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAA5wDYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:51:09.73Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "UpdateLivro.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\UpdateLivro.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\UpdateLivro.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\UpdateLivro.cs",
-              "RelativeToolTip": "src\\API\\Features\\Livros\\UpdateLivro.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwDwAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:33:16.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Assunto.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Assunto.cs",
-              "RelativeDocumentMoniker": "src\\API\\Models\\Assunto.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Assunto.cs",
-              "RelativeToolTip": "src\\API\\Models\\Assunto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T11:48:43.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateLivro.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\CreateLivro.cs",
-              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\CreateLivro.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\CreateLivro.cs",
-              "RelativeToolTip": "src\\API\\Features\\Livros\\CreateLivro.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAIwE0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T21:35:38.003Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Messages.cs",
-              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Messages\\Messages.cs",
-              "RelativeDocumentMoniker": "src\\API\\Messages\\Messages.cs",
-              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Messages\\Messages.cs",
-              "RelativeToolTip": "src\\API\\Messages\\Messages.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-13T21:38:38.735Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 8,
               "Title": "FormaCompra.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\FormaCompra.cs",
               "RelativeDocumentMoniker": "src\\API\\Models\\FormaCompra.cs",
@@ -509,7 +397,241 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "src\\API\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Properties\\launchSettings.json",
+              "RelativeToolTip": "src\\API\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-14T01:58:46.149Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AutoresTests.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Autores\\AutoresTests.cs",
+              "RelativeDocumentMoniker": "tests\\Test\\Features\\Autores\\AutoresTests.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Autores\\AutoresTests.cs",
+              "RelativeToolTip": "tests\\Test\\Features\\Autores\\AutoresTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:48:30.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LivrosTests.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Livros\\LivrosTests.cs",
+              "RelativeDocumentMoniker": "tests\\Test\\Features\\Livros\\LivrosTests.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\Livros\\LivrosTests.cs",
+              "RelativeToolTip": "tests\\Test\\Features\\Livros\\LivrosTests.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAABaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T01:41:28.391Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Autor.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Autor.cs",
+              "RelativeDocumentMoniker": "src\\API\\Models\\Autor.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Autor.cs",
+              "RelativeToolTip": "src\\API\\Models\\Autor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T00:19:27.005Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetLivros.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\GetLivros.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\GetLivros.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\GetLivros.cs",
+              "RelativeToolTip": "src\\API\\Features\\Livros\\GetLivros.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T21:03:27.122Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetFormasCompra.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
+              "RelativeToolTip": "src\\API\\Features\\FormasCompra\\GetFormasCompra.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBMAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:53:15.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "FormasCompraTests.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
+              "RelativeDocumentMoniker": "tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
+              "RelativeToolTip": "tests\\Test\\Features\\FormasCompra\\FormasCompraTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T00:32:21.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Livro.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Livro.cs",
+              "RelativeDocumentMoniker": "src\\API\\Models\\Livro.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Livro.cs",
+              "RelativeToolTip": "src\\API\\Models\\Livro.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwA8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:49:14.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "LivroAutor.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\LivroAutor.cs",
+              "RelativeDocumentMoniker": "src\\API\\Models\\LivroAutor.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\LivroAutor.cs",
+              "RelativeToolTip": "src\\API\\Models\\LivroAutor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-14T00:08:21.402Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "GetAutores.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\GetAutores.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\GetAutores.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\GetAutores.cs",
+              "RelativeToolTip": "src\\API\\Features\\Autores\\GetAutores.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:52:16.648Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "UpdateAutor.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\UpdateAutor.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\UpdateAutor.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\UpdateAutor.cs",
+              "RelativeToolTip": "src\\API\\Features\\Autores\\UpdateAutor.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA7wDEAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:52:23.011Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "API.http",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.http",
+              "RelativeDocumentMoniker": "src\\API\\API.http",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\API.http",
+              "RelativeToolTip": "src\\API\\API.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-04-13T11:17:56.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DeleteAssunto.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
+              "RelativeToolTip": "src\\API\\Features\\Assuntos\\DeleteAssunto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:50:51.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateAssunto.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
+              "RelativeToolTip": "src\\API\\Features\\Assuntos\\UpdateAssunto.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAA5wDYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:51:09.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "UpdateLivro.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\UpdateLivro.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\UpdateLivro.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\UpdateLivro.cs",
+              "RelativeToolTip": "src\\API\\Features\\Livros\\UpdateLivro.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAIwDwAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:33:16.893Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Assunto.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Assunto.cs",
+              "RelativeDocumentMoniker": "src\\API\\Models\\Assunto.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Models\\Assunto.cs",
+              "RelativeToolTip": "src\\API\\Models\\Assunto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T11:48:43.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateLivro.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\CreateLivro.cs",
+              "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\CreateLivro.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\CreateLivro.cs",
+              "RelativeToolTip": "src\\API\\Features\\Livros\\CreateLivro.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAIwE0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T21:35:38.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Messages.cs",
+              "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Messages\\Messages.cs",
+              "RelativeDocumentMoniker": "src\\API\\Messages\\Messages.cs",
+              "ToolTip": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Messages\\Messages.cs",
+              "RelativeToolTip": "src\\API\\Messages\\Messages.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-13T21:38:38.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
               "Title": "DeleteLivro.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Livros\\DeleteLivro.cs",
               "RelativeDocumentMoniker": "src\\API\\Features\\Livros\\DeleteLivro.cs",
@@ -522,7 +644,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 34,
               "Title": "DeleteAutor.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\DeleteAutor.cs",
               "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\DeleteAutor.cs",
@@ -535,7 +657,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 35,
               "Title": "CreateAutor.cs",
               "DocumentMoniker": "C:\\Users\\malve\\source\\repos\\desafio-tjrj\\back\\src\\API\\Features\\Autores\\CreateAutor.cs",
               "RelativeDocumentMoniker": "src\\API\\Features\\Autores\\CreateAutor.cs",

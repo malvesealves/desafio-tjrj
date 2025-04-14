@@ -10,6 +10,7 @@ namespace API.DatabaseContext
         public DbSet<Livro> Livros { get; set; }
         public DbSet<FormaCompra> FormasCompra { get; set; }
         public DbSet<LivroAutor> LivrosAutores { get; set; }
+        public DbSet<RelatorioView> ViewLivroAutor { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -70,6 +71,16 @@ namespace API.DatabaseContext
                 .HasOne(la => la.Autor)
                 .WithMany(a => a.LivrosAutores)
                 .HasForeignKey(la => la.CodAu);
+
+            #endregion
+
+            #region View
+
+            modelBuilder.Entity<RelatorioView>()
+                .HasNoKey()
+                .ToView("vw_livros_autores");
+
+            modelBuilder.Entity<RelatorioView>().Metadata.SetIsTableExcludedFromMigrations(true);
 
             #endregion
         }

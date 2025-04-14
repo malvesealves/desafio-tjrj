@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report ScriptLanguage="CSharp" ReportInfo.Created="04/13/2025 00:00:00" ReportInfo.Modified="04/13/2025 00:00:00" ReportInfo.CreatorVersion="2022.3.0.0">
+  <Dictionary>
+    <TableDataSource Name="LivroAutorView" ReferenceName="LivroAutorView" DataType="System.Collections.Generic.List`1[[LivroAutorView]]" Enabled="true">
+      <Column Name="Livro_Id" DataType="System.Int32"/>
+      <Column Name="Livro_Titulo" DataType="System.String"/>
+      <Column Name="Livro_Assunto" DataType="System.String"/>
+      <Column Name="Autor_Id" DataType="System.Int32"/>
+      <Column Name="Autor_Nome" DataType="System.String"/>
+    </TableDataSource>
+  </Dictionary>
+  <ReportPage Name="Page1">
+    <ReportTitleBand Name="ReportTitle1" Width="718.2" Height="37.8">
+      <TextObject Name="Text1" Width="718.2" Height="37.8" Text="Relatório de Livros, Assuntos e Autores" HorzAlign="Center" Font="Arial, 16pt, style=Bold"/>
+    </ReportTitleBand>
+    <PageHeaderBand Name="PageHeader1" Width="718.2" Height="28.35">
+      <TextObject Name="HeaderLivro" Left="0" Width="239.4" Height="28.35" Text="Livro" Border.Lines="All" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="HeaderAssunto" Left="239.4" Width="239.4" Height="28.35" Text="Assunto" Border.Lines="All" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+      <TextObject Name="HeaderAutor" Left="478.8" Width="239.4" Height="28.35" Text="Autor" Border.Lines="All" HorzAlign="Center" Font="Arial, 10pt, style=Bold"/>
+    </PageHeaderBand>
+    <DataBand Name="Data1" Width="718.2" Height="28.35" DataSource="LivroAutorView">
+      <TextObject Name="LivroTitulo" Left="0" Width="239.4" Height="28.35" Text="[LivroAutorView.Livro_Titulo]" Border.Lines="All" Padding="2"/>
+      <TextObject Name="LivroAssunto" Left="239.4" Width="239.4" Height="28.35" Text="[LivroAutorView.Livro_Assunto]" Border.Lines="All" Padding="2"/>
+      <TextObject Name="AutorNome" Left="478.8" Width="239.4" Height="28.35" Text="[LivroAutorView.Autor_Nome]" Border.Lines="All" Padding="2"/>
+    </DataBand>
+    <PageFooterBand Name="PageFooter1" Width="718.2" Height="18.9">
+      <TextObject Name="PageNumber" Left="619.5" Width="98.7" Height="18.9" Text="Página [Page#]" HorzAlign="Right" Font="Arial, 9pt"/>
+    </PageFooterBand>
+  </ReportPage>
+</Report>
