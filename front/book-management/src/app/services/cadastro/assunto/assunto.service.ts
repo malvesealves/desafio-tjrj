@@ -5,25 +5,26 @@ import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environment/environment';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class AssuntoService {
-
   private serviceUrl = environment.apiUrl + '/assuntos';
 
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Assunto[]> {
-    return this.http.get<any>(this.serviceUrl).pipe(map((resp) => {
-      const assuntos: Assunto[] = [];      
-      debugger;
-      return assuntos;
-    }));
+    return this.http.get<any>(this.serviceUrl).pipe(
+      map((resp: any) => {
+        let assuntos: Assunto[] = [];
+        assuntos = resp.data;
+        return assuntos;
+      })
+    );
   }
 
   add(assunto: Assunto): Observable<Assunto> {
     return this.http.post<Assunto>(this.serviceUrl, assunto);
-  }  
+  }
 
   update(assunto: Assunto): Observable<void> {
     return this.http.put<void>(`${this.serviceUrl}/${assunto.codAs}`, assunto);

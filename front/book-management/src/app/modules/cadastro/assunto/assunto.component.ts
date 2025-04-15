@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import {
   FormBuilder,
   FormGroup,
@@ -21,7 +21,18 @@ export class AssuntoComponent {
   codAs: number | null = null;
 
   assuntos: Assunto[] = [];
-  colunas: string[] = ['Código', 'Descrição'];
+  colunas: object[] = [
+    {
+      data: 'codAs',
+      label: 'Código',
+    },
+    {
+      data: 'descricao',
+      label: 'Descrição',
+    },
+  ];
+
+  @ViewChild('newButton') newButton!: ElementRef<HTMLElement>;
 
   constructor(private fb: FormBuilder, private service: AssuntoService) {
     this.form = this.fb.group({
@@ -39,39 +50,46 @@ export class AssuntoComponent {
     });
   }
 
-  submit() {
-    if (this.form.invalid) return;
-
-    const assunto: Assunto = {
-      id: this.codAs ?? 0,
-      ...this.form.value,
-    };
-
-    if (this.codAs === null) {
-      this.service.add(assunto);
-    } else {
-      this.service.update(assunto);
-    }
-
-    this.form.reset();
-    this.codAs = null;
-    this.loadAssuntos();
-  }
-
-  edit(assunto: Assunto) {
+  edit(assunto: any) {
     this.form.setValue({
       descricao: assunto.descricao,
     });
     this.codAs = assunto.codAs;
   }
 
-  remove(id: number) {
-    this.service.delete(id);
-    this.loadAssuntos();
+  remove(assunto: any) {
+    this.service.delete(assunto.codAs).subscribe(() => {
+      this.loadAssuntos();
+    });
   }
 
   cancel() {
     this.form.reset();
     this.codAs = null;
+  }
+
+  submit() {
+    if (this.form.invalid) return;
+
+    const assunto: Assunto = {
+      codAs: this.codAs ?? 0,
+      ...this.form.value,
+    };
+
+    debugger;
+
+    if (this.codAs === null) {
+      this.service.add(assunto).subscribe(() => {
+        this.loadAssuntos();
+      });
+    } else {
+      this.service.update(assunto).subscribe(() => {
+        this.loadAssuntos();
+      });
+    }
+
+    this.form.reset();
+    this.codAs = null;
+    this.loadAssuntos();
   }
 }

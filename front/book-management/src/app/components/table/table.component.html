@@ -1,19 +1,19 @@
 <table class="table table-bordered table-striped">
     <thead class="table-light">
         <tr>
-            <th *ngFor="let column of columns">{{ column }}</th>
+            <th *ngFor="let column of columns">{{ column.label }}</th>
         </tr>
     </thead>
     <tbody>
         <tr *ngFor="let row of array">
             <td *ngFor="let column of columns">
-                {{ row[column] }}
+                {{ row[column.data] }}
             </td>
             <td>
-                <button class="btn btn-sm btn-warning me-2">
+                <button class="btn btn-sm btn-warning me-2" (click)="editItem(row)">
                     <i class="bi bi-pencil" title="Editar"></i>
                 </button>
-                <button class="btn btn-sm btn-danger">
+                <button class="btn btn-sm btn-danger" (click)="removeItem(row)">
                     <i class="bi bi-x-lg" title="Remover"></i>
                 </button>
             </td>

@@ -17,9 +17,21 @@ import { AutorService } from '../../../services/cadastro/autor/autor.service';
   styleUrl: './autor.component.css',
 })
 export class AutorComponent {
+
   form: FormGroup;
-  autores: Autor[] = [];
   codAu: number | null = null;
+
+  autores: Autor[] = [];
+    colunas: object[] = [
+      {
+        data: 'codAu',
+        label: 'Código',
+      },
+      {
+        data: 'nome',
+        label: 'Nome',
+      },
+    ];
 
   constructor(private fb: FormBuilder, private service: AutorService) {
     this.form = this.fb.group({

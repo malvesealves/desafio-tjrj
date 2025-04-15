@@ -1,10 +1,17 @@
 ﻿using API.DatabaseContext;
+using API.Dto;
 using API.Endpoints;
-using API.Models;
+using API.Mapper;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Features.FormasCompra
 {
+    #region Response
+
+    public record Response(List<FormaCompraDto> Data);
+
+    #endregion
+
     public class GetFormasCompra
     {
         public class Endpoint : IEndpoint
@@ -16,9 +23,16 @@ namespace API.Features.FormasCompra
 
             public static async Task<IResult> Handler(AppDbContext context)
             {
-                List<FormaCompra> livros = await context.FormasCompra.ToListAsync();
+                List<FormaCompraDto> formasCompra = await context.FormasCompra
+                    .OrderBy(f => f.CodForComp)
+                    .Select(f => FormaCompraMapper.ToDTO(f))                    
+                    .AsNoTracking()
+                    .ToListAsync();
 
-                return TypedResults.Ok(livros);
+                if (formasCompra.Count > 0)
+                    return TypedResults.Ok(new Response(formasCompra));
+
+                return TypedResults.Ok(new Response([]));
             }
         }
     }

@@ -9,8 +9,8 @@ namespace API.Mapper
         {
             return new AssuntoDto
             {
-                Código = assunto.CodAs,
-                Descrição = assunto.Descricao
+                CodAs = assunto.CodAs,
+                Descricao = assunto.Descricao
             };
         }
 
