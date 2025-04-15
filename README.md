@@ -42,7 +42,7 @@ Este projeto é um sistema CRUD completo para gerenciamento de livros e criaçã
    cd back/src/API
    ```
 
-2. **Configure a string de conexão no `appsettings.json`:**
+2. **Altere a string de conexão no `appsettings.json` de acordo com as devidas configurações:**
    ```json
    "ConnectionStrings": {
      "DefaultConnection": "Host=localhost;Port=5432;Database=book-management;Username=postgres;Password=tjrj1234"
