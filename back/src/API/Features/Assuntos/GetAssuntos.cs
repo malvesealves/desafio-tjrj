@@ -1,5 +1,7 @@
 ﻿using API.DatabaseContext;
+using API.Dto;
 using API.Endpoints;
+using API.Mapper;
 using API.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -7,6 +9,12 @@ namespace API.Features.Assuntos;
 
 public class GetAssuntos
 {
+    #region Response
+
+    public record Response(List<AssuntoDto> Assuntos);
+
+    #endregion
+
     public class Endpoint : IEndpoint
     {
         public void MapEndpoint(IEndpointRouteBuilder app)
@@ -16,9 +24,12 @@ public class GetAssuntos
 
         public static async Task<IResult> Handler(AppDbContext context)
         {
-            List<Assunto> assuntos = await context.Assuntos.ToListAsync();
+            List<AssuntoDto> assuntos = await context.Assuntos.Select(a => AssuntoMapper.ToDTO(a)).ToListAsync();
 
-            return TypedResults.Ok(assuntos.Select(a => { a.CodAs, a.Descricao}));
+            if (assuntos.Count > 0)
+                return TypedResults.Ok(new Response(assuntos));
+
+            return TypedResults.Ok(new Response([]));
         }
     }
 }

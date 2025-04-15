@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Assunto } from '../../../interfaces/cadastro/assunto.model';
-import { Observable } from 'rxjs';
+import { map, Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { environment } from '../../../../environment/environment';
 
@@ -14,7 +14,11 @@ export class AssuntoService {
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Assunto[]> {
-    return this.http.get<Assunto[]>(this.serviceUrl);
+    return this.http.get<any>(this.serviceUrl).pipe(map((resp) => {
+      const assuntos: Assunto[] = [];      
+      debugger;
+      return assuntos;
+    }));
   }
 
   add(assunto: Assunto): Observable<Assunto> {

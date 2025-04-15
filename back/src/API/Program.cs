@@ -7,29 +7,30 @@ using Npgsql;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.AddEndpoints();
+
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
-
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AngularApp", policy =>
+    options.AddPolicy("CorsPolicy", policy =>
     {
         policy.WithOrigins("http://localhost:4200")
-              .AllowAnyHeader()
-              .AllowAnyMethod()
-              .AllowCredentials();
+        .AllowAnyMethod()
+        .AllowAnyHeader()
+        .AllowAnyOrigin();
     });
 });
 
-
-builder.Services.AddEndpoints();
+builder.Services.AddDbContext<AppDbContext>(options => options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddValidatorsFromAssembly(typeof(Program).Assembly);
 
 var app = builder.Build();
+
+app.UseCors("CorsPolicy");
 
 using (IServiceScope scope = app.Services.CreateScope())
 {
@@ -57,13 +58,13 @@ using (IServiceScope scope = app.Services.CreateScope())
 if (app.Environment.IsDevelopment())
     app.MapOpenApi();
 
-app.UseCors("AngularApp");
+app.UseCors(x => x.AllowAnyOrigin()
+            .AllowAnyMethod()
+            .AllowAnyHeader());
 
 app.UseMiddleware<ExceptionHandling>();
 
 app.MapEndpoints();
-
-app.UseHttpsRedirection();
 
 app.Run();
 

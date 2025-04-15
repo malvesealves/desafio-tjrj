@@ -8,8 +8,8 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrl: './table.component.css'
 })
 export class TableComponent implements OnInit{
+  @Input() columns: string[] = [];
   @Input() array: any[] = [];
-  @Input() columns: any[] = [];
 
   ngOnInit() {
     console.log(this.array);

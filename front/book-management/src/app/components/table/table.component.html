@@ -5,16 +5,16 @@
         </tr>
     </thead>
     <tbody>
-        <tr *ngFor="let book of array">
-            <td>{{ book.id }}</td>
-            <td>{{ book.title }}</td>
-            <td>{{ book.author }}</td>
+        <tr *ngFor="let row of array">
+            <td *ngFor="let column of columns">
+                {{ row[column] }}
+            </td>
             <td>
                 <button class="btn btn-sm btn-warning me-2">
-                    <i class="bi bi-pencil" data-toggle="tooltip" data-placement="top" title="Editar"></i>
+                    <i class="bi bi-pencil" title="Editar"></i>
                 </button>
                 <button class="btn btn-sm btn-danger">
-                    <i class="bi bi-pencil" data-toggle="tooltip" data-placement="top" title="Remover"></i>
+                    <i class="bi bi-x-lg" title="Remover"></i>
                 </button>
             </td>
         </tr>

@@ -1,5 +1,5 @@
 <div class="card container">
-    <div class="row">
+    <div class="row mt-3">
         <h2 class="col-6 mb-4">Cadastro de Assunto</h2>
         <div class="col-6 text-end">
             <button class="btn btn-sm btn-primary me-2 pe-2" data-bs-toggle="collapse" data-bs-target="#collapseExample"
@@ -8,7 +8,7 @@
             </button>
         </div>
     </div>
-    <app-table [array]="assuntos"></app-table>
+    <app-table [array]="assuntos" [columns]="colunas"></app-table>
     <div class="collapse" id="collapseExample">
         <form [formGroup]="form" (ngSubmit)="submit()" class="mb-4">
             <div class="row">
