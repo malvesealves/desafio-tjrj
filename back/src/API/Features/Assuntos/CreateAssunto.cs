@@ -48,6 +48,8 @@ public class CreateAssunto
 
             await context.Assuntos.AddAsync(assunto);
 
+            await context.SaveChangesAsync();
+
             return TypedResults.Ok(new Response(assunto.CodAs, assunto.Descricao));
         }
     }

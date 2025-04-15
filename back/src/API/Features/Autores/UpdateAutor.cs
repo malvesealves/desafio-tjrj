@@ -1,6 +1,5 @@
 ﻿using API.DatabaseContext;
 using API.Endpoints;
-using API.Features.Assuntos;
 using API.Models;
 using FluentValidation;
 using FluentValidation.Results;

@@ -10,7 +10,9 @@
                 {{ row[column.data] }}
             </td>
             <td>
-                <button class="btn btn-sm btn-warning me-2" (click)="editItem(row)">
+                <button class="btn btn-sm btn-warning me-2" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseForm" aria-expanded="true" aria-controls="collapseForm"
+                    (click)="editItem(row)">
                     <i class="bi bi-pencil" title="Editar"></i>
                 </button>
                 <button class="btn btn-sm btn-danger" (click)="removeItem(row)">

@@ -2,7 +2,6 @@
 using API.Dto;
 using API.Endpoints;
 using API.Mapper;
-using API.Models;
 using Microsoft.EntityFrameworkCore;
 
 namespace API.Features.Assuntos;

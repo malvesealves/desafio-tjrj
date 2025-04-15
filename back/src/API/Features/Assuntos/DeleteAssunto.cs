@@ -18,9 +18,7 @@ public class DeleteAssunto
             Assunto? assunto = await context.Assuntos.FindAsync(id);
 
             if (assunto is null)
-            {
                 return TypedResults.NotFound();
-            }
 
             context.Remove(assunto);
 

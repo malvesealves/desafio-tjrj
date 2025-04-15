@@ -28,6 +28,20 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
     }
 
     [Fact]
+    public async Task DeveDeletarAssuntoComSucesso()
+    {
+        
+
+        HttpResponseMessage response = await _client.PostAsJsonAsync("/assuntos", novoAssunto);
+
+        response.StatusCode.Should().Be(HttpStatusCode.Created);
+
+        Livro? livro = await response.Content.ReadFromJsonAsync<Livro>();
+        livro.Should().NotBeNull();
+        livro!.Titulo.Should().Be("Assunto Teste");
+    }
+
+    [Fact]
     public async Task DeveObterAssuntosComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/assuntos");

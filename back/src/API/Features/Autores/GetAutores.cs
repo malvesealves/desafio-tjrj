@@ -25,7 +25,7 @@ public class GetAutores
         {
             List<AutorDto> autores = await context.Autores
                 .OrderBy(a => a.CodAu)
-                .Select(a => AutorMapper.ToDTO(a))                
+                .Select(a => AutorMapper.ToDTO(a))
                 .AsNoTracking()
                 .ToListAsync();
 

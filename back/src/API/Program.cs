@@ -50,7 +50,6 @@ using (IServiceScope scope = app.Services.CreateScope())
         using var command = connection.CreateCommand();
         command.CommandText = sql;
         command.ExecuteNonQuery();
-        Console.WriteLine($"Executado: {Path.GetFileName(file)}");
     }
 }
 
@@ -65,6 +64,8 @@ app.UseCors(x => x.AllowAnyOrigin()
 app.UseMiddleware<ExceptionHandling>();
 
 app.MapEndpoints();
+
+app.MapGet("/", () => "Running");
 
 app.Run();
 

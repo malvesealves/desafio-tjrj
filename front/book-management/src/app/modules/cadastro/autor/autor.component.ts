@@ -17,21 +17,20 @@ import { AutorService } from '../../../services/cadastro/autor/autor.service';
   styleUrl: './autor.component.css',
 })
 export class AutorComponent {
-
   form: FormGroup;
   codAu: number | null = null;
 
   autores: Autor[] = [];
-    colunas: object[] = [
-      {
-        data: 'codAu',
-        label: 'Código',
-      },
-      {
-        data: 'nome',
-        label: 'Nome',
-      },
-    ];
+  colunas: object[] = [
+    {
+      data: 'codAu',
+      label: 'Código',
+    },
+    {
+      data: 'nome',
+      label: 'Nome',
+    },
+  ];
 
   constructor(private fb: FormBuilder, private service: AutorService) {
     this.form = this.fb.group({
@@ -44,44 +43,52 @@ export class AutorComponent {
   }
 
   loadAutores() {
-    this.service.getAll().subscribe((assuntos) => {
-      this.autores = assuntos;
+    this.service.getAll().subscribe((autores: Autor[]) => {
+      this.autores = autores;
     });
+  }
+
+  new() {
+    this.form.reset();
+    this.codAu = null;
+  }
+
+  edit(assunto: any) {
+    this.form.setValue({
+      nome: assunto.nome,
+    });
+    this.codAu = assunto.codAu;
+  }
+
+  remove(assunto: any) {
+    this.service.delete(assunto.codAu).subscribe(() => {
+      this.loadAutores();
+    });
+  }
+
+  cancel() {
+    this.form.reset();
+    this.codAu = null;
   }
 
   submit() {
     if (this.form.invalid) return;
 
     const autor: Autor = {
-      id: this.codAu ?? 0,
+      codAu: this.codAu ?? 0,
       ...this.form.value,
     };
 
     if (this.codAu === null) {
-      this.service.add(autor);
+      this.service.add(autor).subscribe(() => {
+        this.cancel();
+        this.loadAutores();
+      });
     } else {
-      this.service.update(autor);
+      this.service.update(autor).subscribe(() => {
+        this.cancel();
+        this.loadAutores();
+      });
     }
-
-    this.form.reset();
-    this.codAu = null;
-    this.loadAutores();
-  }
-
-  edit(autor: Autor) {
-    this.form.setValue({
-      nome: autor.nome,
-    });
-    this.codAu = autor.codAu;
-  }
-
-  remove(id: number) {
-    this.service.delete(id);
-    this.loadAutores();
-  }
-
-  cancel() {
-    this.form.reset();
-    this.codAu = null;
   }
 }

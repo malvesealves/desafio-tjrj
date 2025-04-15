@@ -48,6 +48,8 @@ public class CreateAutor
 
             await context.Autores.AddAsync(autor);
 
+            await context.SaveChangesAsync();
+
             return TypedResults.Ok(new Response(autor.CodAu, autor.Nome));
         }
     }

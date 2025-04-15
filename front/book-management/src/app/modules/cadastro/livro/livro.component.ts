@@ -16,8 +16,41 @@ export class LivroComponent implements OnInit {
 
   form: FormGroup;
   livros: Livro[] = [];
-  colunas: string[] = ['1', '2'];
   codL: number | null = null;
+  colunas: object[] = [
+    {
+      data: 'codL',
+      label: 'Código',
+    },
+    {
+      data: 'titulo',
+      label: 'Título',
+    },
+    {
+      data: 'editora',
+      label: 'Editora',
+    },
+    {
+      data: 'edicao',
+      label: 'Edição',
+    },
+    {
+      data: 'anoPublicacao',
+      label: 'Ano Publicação',
+    },
+    {
+      data: 'preco',
+      label: 'Preco',
+    },
+    {
+      data: 'assunto',
+      label: 'Assunto',
+    },
+    {
+      data: 'formaCompra',
+      label: 'Forma Compra',
+    },
+  ];
 
   constructor(private fb: FormBuilder, private service: LivroService) {
     this.form = this.fb.group({
@@ -39,7 +72,7 @@ export class LivroComponent implements OnInit {
   }
 
   loadLivros() {
-    this.service.getAll().subscribe((livros) => {
+    this.service.getAll().subscribe((livros: Livro[]) => {
       this.livros = livros;
     });
   }
@@ -62,26 +95,12 @@ export class LivroComponent implements OnInit {
     this.autores.removeAt(index);
   }
 
-  submit() {
-    if (this.form.invalid) return;
-
-    const assunto: Livro = {
-      id: this.codL ?? 0,
-      ...this.form.value,
-    };
-
-    if (this.codL === null) {
-      this.service.add(assunto);
-    } else {
-      this.service.update(assunto);
-    }
-
+  new() {
     this.form.reset();
     this.codL = null;
-    this.loadLivros();
   }
 
-  edit(livro: Livro) {
+  edit(livro: any) {
     this.form.setValue({
       titulo: livro.titulo,
       autores: livro.autores, 
@@ -103,4 +122,25 @@ export class LivroComponent implements OnInit {
     this.form.reset();
     this.codL = null;
   }
+
+  submit() {
+    if (this.form.invalid) return;
+
+    const livro: Livro = {
+      codL: this.codL ?? 0,
+      ...this.form.value,
+    };
+
+    if (this.codL === null) {
+      this.service.add(livro).subscribe(() => {
+        this.cancel();
+        this.loadLivros();
+      });
+    } else {
+      this.service.update(livro).subscribe(() => {
+        this.cancel();
+        this.loadLivros();
+      });
+    }    
+  }  
 }

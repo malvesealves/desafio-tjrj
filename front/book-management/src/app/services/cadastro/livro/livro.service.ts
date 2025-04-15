@@ -14,7 +14,13 @@ export class LivroService {
   constructor(private http: HttpClient) {}
 
   getAll(): Observable<Livro[]> {
-    return this.http.get<Livro[]>(this.serviceUrl);
+    return this.http.get<any>(this.serviceUrl).pipe(
+          map((resp: any) => {
+            let livros: Livro[] = [];
+            livros = resp.data;
+            return livros;
+          })
+        );
   }
 
   add(livro: Livro): Observable<Livro> {

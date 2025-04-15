@@ -50,6 +50,11 @@ export class AssuntoComponent {
     });
   }
 
+  new() {
+    this.form.reset();
+    this.codAs = null;
+  }
+
   edit(assunto: any) {
     this.form.setValue({
       descricao: assunto.descricao,
@@ -76,20 +81,16 @@ export class AssuntoComponent {
       ...this.form.value,
     };
 
-    debugger;
-
     if (this.codAs === null) {
       this.service.add(assunto).subscribe(() => {
+        this.cancel();
         this.loadAssuntos();
       });
     } else {
       this.service.update(assunto).subscribe(() => {
+        this.cancel();
         this.loadAssuntos();
       });
     }
-
-    this.form.reset();
-    this.codAs = null;
-    this.loadAssuntos();
   }
 }

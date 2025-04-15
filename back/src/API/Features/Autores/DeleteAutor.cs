@@ -18,9 +18,7 @@ public class DeleteAutor
             Autor? autor = await context.Autores.FindAsync(id);
 
             if (autor is null)
-            {
                 return TypedResults.NotFound();
-            }
 
             context.Remove(autor);
 
