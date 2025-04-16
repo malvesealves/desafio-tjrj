@@ -22,23 +22,9 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
 
         response.StatusCode.Should().Be(HttpStatusCode.Created);
 
-        Livro? livro = await response.Content.ReadFromJsonAsync<Livro>();
-        livro.Should().NotBeNull();
-        livro!.Titulo.Should().Be("Assunto Teste");
-    }
-
-    [Fact]
-    public async Task DeveDeletarAssuntoComSucesso()
-    {
-        
-
-        HttpResponseMessage response = await _client.PostAsJsonAsync("/assuntos", novoAssunto);
-
-        response.StatusCode.Should().Be(HttpStatusCode.Created);
-
-        Livro? livro = await response.Content.ReadFromJsonAsync<Livro>();
-        livro.Should().NotBeNull();
-        livro!.Titulo.Should().Be("Assunto Teste");
+        Assunto? assunto = await response.Content.ReadFromJsonAsync<Assunto>();
+        assunto.Should().NotBeNull();
+        assunto!.Descricao.Should().Be("Assunto Teste");
     }
 
     [Fact]
@@ -46,9 +32,64 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
     {
         HttpResponseMessage response = await _client.GetAsync("/assuntos");
 
-        response.StatusCode.Should().Be(HttpStatusCode.Created);
+        response.StatusCode.Should().Be(HttpStatusCode.OK);
 
-        Assunto[]? livros = await response.Content.ReadFromJsonAsync<Assunto[]>();
-        livros.Should().NotBeNull();
+        Assunto[]? assuntos = await response.Content.ReadFromJsonAsync<Assunto[]>();
+        assuntos.Should().NotBeNull();
+    }
+
+    [Fact]
+    public async Task DeveDeletarAssuntoComSucesso()
+    {
+        HttpResponseMessage responseGet = await _client.GetAsync("/assuntos");
+        Assunto[]? assuntos = await responseGet.Content.ReadFromJsonAsync<Assunto[]>();
+
+        if (assuntos is not null)
+        {
+            Assunto assuntoToDelete = assuntos.First();
+            HttpResponseMessage responseDelete = await _client.DeleteAsync($"/assuntos/{assuntoToDelete.CodAs}");
+
+            responseDelete.StatusCode.Should().Be(HttpStatusCode.NoContent);
+
+            HttpResponseMessage responseAfterDelete = await _client.GetAsync("/assuntos");
+            Assunto[]? assuntosAfterDelete = await responseGet.Content.ReadFromJsonAsync<Assunto[]>();
+
+            Assunto? assuntoDeleted = assuntosAfterDelete?.FirstOrDefault(a => a.CodAs == assuntoToDelete.CodAs);
+
+            assuntoDeleted.Should().BeNull();
+        }
+    }
+
+    [Fact]
+    public async Task DeveAtualizarAssuntoComSucesso()
+    {
+        HttpResponseMessage responseGet = await _client.GetAsync("/assuntos");
+        Assunto[]? assuntos = await responseGet.Content.ReadFromJsonAsync<Assunto[]>();
+
+        if (assuntos is not null)
+        {
+            Assunto assuntoToUpdate = assuntos.First();
+
+            assuntoToUpdate.Descricao = "Nova Descricao";
+
+            HttpResponseMessage responseUpdate = await _client.PutAsJsonAsync($"/assuntos/{assuntoToUpdate.CodAs}", assuntoToUpdate);
+
+            responseUpdate.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            HttpResponseMessage response = await _client.GetAsync("/assuntos");
+
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            Assunto[]? assuntosAfterUpdate = await response.Content.ReadFromJsonAsync<Assunto[]>();
+            assuntosAfterUpdate.Should().NotBeNull();
+
+            if (assuntosAfterUpdate is not null)
+            {
+                Assunto? updatedAssunto = assuntosAfterUpdate?.FirstOrDefault(a => a.CodAs == assuntoToUpdate.CodAs);
+
+                updatedAssunto.Should().NotBeNull();
+                updatedAssunto!.Descricao.Should().Be("Nova Descricao");
+            }            
+        }
     }
 }

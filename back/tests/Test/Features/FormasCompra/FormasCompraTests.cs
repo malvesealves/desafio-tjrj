@@ -22,7 +22,7 @@ public class FormasCompraTests : IClassFixture<CustomWebAppFactory>
 
         response.StatusCode.Should().Be(HttpStatusCode.Created);
 
-        Assunto[]? livros = await response.Content.ReadFromJsonAsync<Assunto[]>();
-        livros.Should().NotBeNull();
+        FormaCompra[]? formasCompra = await response.Content.ReadFromJsonAsync<FormaCompra[]>();
+        formasCompra.Should().NotBeNull();
     }
 }

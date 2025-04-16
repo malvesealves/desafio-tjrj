@@ -11,30 +11,85 @@ public class AutoresTests(CustomWebAppFactory factory) : IClassFixture<CustomWeb
     private readonly HttpClient _client = factory.CreateClient();
 
     [Fact]
-    public async Task DeveCriarAssuntoComSucesso()
+    public async Task DeveCriarAutorComSucesso()
     {
         Autor novoAutor = new()
         {
-            Nome = "Nome Teste",
+            Nome = "Autor Teste",
         };
 
         HttpResponseMessage response = await _client.PostAsJsonAsync("/autores", novoAutor);
 
         response.StatusCode.Should().Be(HttpStatusCode.Created);
 
-        Livro? livro = await response.Content.ReadFromJsonAsync<Livro>();
-        livro.Should().NotBeNull();
-        livro!.Titulo.Should().Be("Nome Teste");
+        Autor? autor = await response.Content.ReadFromJsonAsync<Autor>();
+        autor.Should().NotBeNull();
+        autor!.Nome.Should().Be("Autor Teste");
     }
 
     [Fact]
-    public async Task DeveObterAssuntosComSucesso()
+    public async Task DeveObterAutoresComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/autores");
 
-        response.StatusCode.Should().Be(HttpStatusCode.Created);
+        response.StatusCode.Should().Be(HttpStatusCode.OK);
 
-        Assunto[]? livros = await response.Content.ReadFromJsonAsync<Assunto[]>();
-        livros.Should().NotBeNull();
+        Autor[]? autores = await response.Content.ReadFromJsonAsync<Autor[]>();
+        autores.Should().NotBeNull();
+    }
+
+    [Fact]
+    public async Task DeveDeletarAutorComSucesso()
+    {
+        HttpResponseMessage responseGet = await _client.GetAsync("/autores");
+        Autor[]? autores = await responseGet.Content.ReadFromJsonAsync<Autor[]>();
+
+        if (autores is not null)
+        {
+            Autor autorToDelete = autores.First();
+            HttpResponseMessage responseDelete = await _client.DeleteAsync($"/autores/{autorToDelete.CodAu}");
+
+            responseDelete.StatusCode.Should().Be(HttpStatusCode.NoContent);
+
+            HttpResponseMessage responseAfterDelete = await _client.GetAsync("/autores");
+            Autor[]? autoresAfterDelete = await responseGet.Content.ReadFromJsonAsync<Autor[]>();
+
+            Autor? autorDeleted = autoresAfterDelete?.FirstOrDefault(a => a.CodAu == autorToDelete.CodAu);
+
+            autorDeleted.Should().BeNull();
+        }
+    }
+
+    [Fact]
+    public async Task DeveAtualizarAutorComSucesso()
+    {
+        HttpResponseMessage responseGet = await _client.GetAsync("/autores");
+        Autor[]? autores = await responseGet.Content.ReadFromJsonAsync<Autor[]>();
+
+        if (autores is not null)
+        {
+            Autor autorToUpdate = autores.First();
+
+            autorToUpdate.Nome = "Novo Nome";
+
+            HttpResponseMessage responseUpdate = await _client.PutAsJsonAsync($"/autores/{autorToUpdate.CodAu}", autorToUpdate);
+
+            responseUpdate.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            HttpResponseMessage response = await _client.GetAsync("/autores");
+
+            response.StatusCode.Should().Be(HttpStatusCode.OK);
+
+            Autor[]? autoresAfterUpdate = await response.Content.ReadFromJsonAsync<Autor[]>();
+            autoresAfterUpdate.Should().NotBeNull();
+
+            if (autoresAfterUpdate is not null)
+            {
+                Autor? updatedAutor = autoresAfterUpdate?.FirstOrDefault(a => a.CodAu == autorToUpdate.CodAu);
+
+                updatedAutor.Should().NotBeNull();
+                updatedAutor!.Nome.Should().Be("Novo Nome");
+            }
+        }
     }
 }
