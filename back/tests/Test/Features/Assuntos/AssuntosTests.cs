@@ -10,7 +10,7 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
 {
     private readonly HttpClient _client = factory.CreateClient();
 
-    [Fact]
+    [Fact(DisplayName = "Cria novo registro de Assunto com sucesso")]
     public async Task DeveCriarAssuntoComSucesso()
     {
         Assunto novoAssunto = new()
@@ -27,7 +27,7 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
         assunto!.Descricao.Should().Be("Assunto Teste");
     }
 
-    [Fact]
+    [Fact(DisplayName = "Busca todos os registros de Assunto cadastrados")]
     public async Task DeveObterAssuntosComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/assuntos");
@@ -38,7 +38,7 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
         assuntos.Should().NotBeNull();
     }
 
-    [Fact]
+    [Fact(DisplayName = "Deleta registro de Assunto com sucesso e valida não existência")]
     public async Task DeveDeletarAssuntoComSucesso()
     {
         HttpResponseMessage responseGet = await _client.GetAsync("/assuntos");
@@ -60,7 +60,7 @@ public class AssuntosTests(CustomWebAppFactory factory) : IClassFixture<CustomWe
         }
     }
 
-    [Fact]
+    [Fact(DisplayName = "Atualiza registro de Assunto com sucesso")]
     public async Task DeveAtualizarAssuntoComSucesso()
     {
         HttpResponseMessage responseGet = await _client.GetAsync("/assuntos");

@@ -15,7 +15,7 @@ public class FormasCompraTests : IClassFixture<CustomWebAppFactory>
         _client = factory.CreateClient();
     }
 
-    [Fact]
+    [Fact(DisplayName = "Busca todos os registros de Forma Compra cadastrados")]
     public async Task DeveObterFormasCompraComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/formas-compra");

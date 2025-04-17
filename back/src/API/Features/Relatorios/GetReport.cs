@@ -11,7 +11,7 @@ public class GetReport
 {
     #region Response
 
-    public record Response(List<RelatorioView> Assunto);
+    public record Response(byte[] FileContents, string ContentType, string FileDownloadName);
 
     #endregion
 
@@ -34,8 +34,8 @@ public class GetReport
 
             report.Prepare();
 
-            using MemoryStream ms = new MemoryStream();
-            PDFSimpleExport pdfExport = new PDFSimpleExport();
+            using MemoryStream ms = new();
+            PDFSimpleExport pdfExport = new();
             report.Export(pdfExport, ms);
             ms.Position = 0;
 

@@ -10,7 +10,7 @@ public class AutoresTests(CustomWebAppFactory factory) : IClassFixture<CustomWeb
 {
     private readonly HttpClient _client = factory.CreateClient();
 
-    [Fact]
+    [Fact(DisplayName = "Cria novo registro de Autor com sucesso")]
     public async Task DeveCriarAutorComSucesso()
     {
         Autor novoAutor = new()
@@ -27,7 +27,7 @@ public class AutoresTests(CustomWebAppFactory factory) : IClassFixture<CustomWeb
         autor!.Nome.Should().Be("Autor Teste");
     }
 
-    [Fact]
+    [Fact(DisplayName = "Busca todos os registros de Autor cadastrados")]
     public async Task DeveObterAutoresComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/autores");
@@ -38,7 +38,7 @@ public class AutoresTests(CustomWebAppFactory factory) : IClassFixture<CustomWeb
         autores.Should().NotBeNull();
     }
 
-    [Fact]
+    [Fact(DisplayName = "Deleta registro de Autor com sucesso e valida não existência")]
     public async Task DeveDeletarAutorComSucesso()
     {
         HttpResponseMessage responseGet = await _client.GetAsync("/autores");
@@ -60,7 +60,7 @@ public class AutoresTests(CustomWebAppFactory factory) : IClassFixture<CustomWeb
         }
     }
 
-    [Fact]
+    [Fact(DisplayName = "Atualiza registro de Autor com sucesso")]
     public async Task DeveAtualizarAutorComSucesso()
     {
         HttpResponseMessage responseGet = await _client.GetAsync("/autores");

@@ -10,7 +10,7 @@ public class LivrosTests(CustomWebAppFactory factory) : IClassFixture<CustomWebA
 {
     private readonly HttpClient _client = factory.CreateClient();
 
-    [Fact]
+    [Fact(DisplayName = "Cria novo registro de Livro com sucesso")]
     public async Task DeveCriarLivroComSucesso()
     {
         Livro novoLivro = new()
@@ -30,7 +30,7 @@ public class LivrosTests(CustomWebAppFactory factory) : IClassFixture<CustomWebA
         livro!.Titulo.Should().Be("Livro Teste");
     }
 
-    [Fact]
+    [Fact(DisplayName = "Busca todos os registros de Livro cadastrados")]
     public async Task DeveObterLivrosComSucesso()
     {
         HttpResponseMessage response = await _client.GetAsync("/livros");
@@ -39,5 +39,27 @@ public class LivrosTests(CustomWebAppFactory factory) : IClassFixture<CustomWebA
 
         Livro[]? livros = await response.Content.ReadFromJsonAsync<Livro[]>();
         livros.Should().NotBeNull();
+    }
+
+    [Fact(DisplayName = "Deleta registro de Livro com sucesso e valida não existência")]
+    public async Task DeveDeletarLivroComSucesso()
+    {
+        HttpResponseMessage responseGet = await _client.GetAsync("/livros");
+        Livro[]? livros = await responseGet.Content.ReadFromJsonAsync<Livro[]>();
+
+        if (livros is not null)
+        {
+            Livro livroToDelete = livros.First();
+            HttpResponseMessage responseDelete = await _client.DeleteAsync($"/livros/{livroToDelete.CodL}");
+
+            responseDelete.StatusCode.Should().Be(HttpStatusCode.NoContent);
+
+            HttpResponseMessage responseAfterDelete = await _client.GetAsync("/livros");
+            Livro[]? livrosAfterDelete = await responseGet.Content.ReadFromJsonAsync<Livro[]>();
+
+            Livro? livroDeleted = livrosAfterDelete?.FirstOrDefault(a => a.CodL == livroToDelete.CodL);
+
+            livroDeleted.Should().BeNull();
+        }
     }
 }
